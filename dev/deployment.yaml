@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels: 
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: sunieldevarapu/jenkins-cicd:2
+        image: sunieldevarapu/jenkins-cicd:4
         ports:
         - containerPort: 8080
